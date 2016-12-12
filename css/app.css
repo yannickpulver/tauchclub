@@ -416,8 +416,8 @@ body {
   min-height: 100%;
   height: auto;
   font-family: 'Source Sans Pro', sans-serif;
-  background: linear-gradient(#449DCC, #0D1D3B);
-  /* Fx 10+, Op 11.6+, Ch 26+, IE 10 */ }
+  font-size: 14px;
+  background: linear-gradient(#449DCC, #0D1D3B); }
 
 .Header {
   height: 50px;
@@ -435,6 +435,24 @@ body {
   text-transform: uppercase; }
 
 .PageSection {
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-top: 50px; }
+
+.PageSection--main {
+  background: url("../img/bg.png"); }
+
+.PageSection__paragraph {
+  margin: 0;
+  padding: 10px;
+  color: #fff; }
+
+.Heading {
+  text-align: center; }
+
+.Heading__text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0; }
 
 /*# sourceMappingURL=app.css.map */

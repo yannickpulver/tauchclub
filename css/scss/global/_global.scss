@@ -13,5 +13,6 @@ body {
   min-height: 100%;
   height: auto;
   font-family: 'Source Sans Pro', sans-serif;
-  background: linear-gradient($shakespear, $blue-zodiac); /* Fx 10+, Op 11.6+, Ch 26+, IE 10 */
+  font-size: 14px;
+  background: linear-gradient($shakespear, $blue-zodiac);
 }
