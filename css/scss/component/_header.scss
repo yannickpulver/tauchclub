@@ -7,9 +7,10 @@
 
 .Header__title {
   margin: 0;
+  color: $white;
   line-height: $header-height;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
 }

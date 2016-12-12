@@ -1,3 +1,25 @@
 .PageSection {
+  min-height: 100vh;
+  padding-top: $header-height;
+}
 
+.PageSection--main {
+  background: url("../img/bg.png");
+}
+
+.PageSection__paragraph {
+  margin: 0;
+  padding: 10px;
+  color: $white;
+}
+
+.Heading {
+  text-align: center;
+}
+
+.Heading__text {
+  color: $white;
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0;
 }
