@@ -407,17 +407,14 @@ template {
   box-sizing: inherit; }
 
 html {
-  min-height: 100%;
-  height: auto;
+  height: 100%;
   width: 100%;
   box-sizing: border-box; }
 
 body {
   min-height: 100%;
   height: auto;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  background: linear-gradient(#449DCC, #0D1D3B); }
+  font-family: 'Source Sans Pro', sans-serif; }
 
 .Header {
   height: 50px;
@@ -427,32 +424,60 @@ body {
 
 .Header__title {
   margin: 0;
-  color: #fff;
   line-height: 50px;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase; }
 
-.PageSection {
-  min-height: 100vh;
-  padding-top: 50px; }
+.bodyWaves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
 
-.PageSection--main {
-  background: url("../img/bg.png"); }
+.box {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0); }
 
-.PageSection__paragraph {
-  margin: 0;
-  padding: 10px;
-  color: #fff; }
+.wave {
+  opacity: .4;
+  position: absolute;
+  bottom: -50%;
+  left: -25%;
+  background: #0af;
+  width: 150%;
+  height: 75%;
+  transform-origin: 50% 48%;
+  border-radius: 80%;
+  animation: drift 15000ms infinite linear; }
 
-.Heading {
-  text-align: center; }
+.wave.-two {
+  animation: drift 8000ms infinite linear;
+  opacity: .1; }
 
-.Heading__text {
-  color: #fff;
-  font-weight: 300;
-  font-size: 4em;
-  margin: 0; }
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0, 0, 0); }
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=app.css.map */
