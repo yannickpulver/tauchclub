@@ -407,14 +407,17 @@ template {
   box-sizing: inherit; }
 
 html {
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   width: 100%;
   box-sizing: border-box; }
 
 body {
   min-height: 100%;
   height: auto;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(#449DCC, #0D1D3B);
+  /* Fx 10+, Op 11.6+, Ch 26+, IE 10 */ }
 
 .Header {
   height: 50px;
@@ -424,10 +427,14 @@ body {
 
 .Header__title {
   margin: 0;
+  color: #fff;
   line-height: 50px;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase; }
+
+.PageSection {
+  min-height: 100vh; }
 
 /*# sourceMappingURL=app.css.map */
