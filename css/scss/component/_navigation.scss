@@ -1,0 +1,46 @@
+.burger{
+    width: 38px;
+    height: 40px;
+}
+
+.burger-line{
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+.right{
+    position: relative;
+    float: right;
+}
+
+.left{
+    position: relative;
+    clear: right;
+}
+
+.menu{
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,.75);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.menu ul{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 500px;
+    left:50%;
+    margin-left: -250px;
+}
+
+.menu ul li{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
