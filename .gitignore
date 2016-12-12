@@ -45,3 +45,5 @@ fabric.properties
 #css
 css/app.css
 css/app.css.map
+*.xml
+.idea/watcherTasks.xml
