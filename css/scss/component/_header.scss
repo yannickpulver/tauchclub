@@ -1,0 +1,15 @@
+.Header {
+  height: $header-height;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.Header__title {
+  margin: 0;
+  line-height: $header-height;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
