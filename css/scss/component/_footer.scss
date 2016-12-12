@@ -1,0 +1,22 @@
+.footer-sand{
+  position: absolute;
+  bottom: 0;
+  height: 33%;
+  width: 100%;
+}
+
+.footer-sand-layer0{
+  position: absolute;
+  display: flex;
+  background: url(../img/sand-layer0.svg) no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.footer-sand-layer1{
+  background: url(../img/sand-layer1.svg) no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
