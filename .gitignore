@@ -40,3 +40,8 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+
+#css
+css/app.css
+css/app.css.map
