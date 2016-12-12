@@ -3,6 +3,7 @@
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .Header__title {
@@ -13,4 +14,6 @@
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+  flex: 1;
+  margin-left: calc(-#{$burger-size} / 2);
 }

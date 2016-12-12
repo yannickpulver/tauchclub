@@ -19,11 +19,39 @@
 
 .Heading {
   text-align: center;
+  z-index: 1;
+  padding: 24px 0 42px;
 }
 
 .Heading__text {
   color: $white;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3em;
   margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Heading__logo {
+  width: 56px;
+  margin-bottom: 24px;
+}
+
+.DiveDown {
+  text-align: center;
+}
+
+.DiveDown__diver {
+  width: 32px;
+}
+
+.DiveDown__spacer {
+  height: 32px;
+  width: 3.5px;
+  margin: 0 auto;
+  background: url("../img/dots.svg");
+}
+
+.DiveDown__text {
+  color: $white-60;
 }

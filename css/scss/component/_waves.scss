@@ -1,54 +1,45 @@
-.bodyWaves {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:100%;
-  width:100%;
+.Waves {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  bottom:0;
+  bottom: 0;
+  z-index: 0;
 }
 
-.box {
+.Waves__container {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
-
 }
 
-.wave {
-  opacity: .97;
-  position: absolute;
-  bottom:-80%;
-  left:-50%;
-  background: $seagull;
+.Waves__wave {
   width: 200%;
   height: 100%;
-  transform-origin: 50% 48%;
+  position: absolute;
+  bottom: -80%;
+  left: -50%;
   border-radius: 60%;
-  animation: drift 30000ms infinite linear;
+  transform-origin: 50% 48%;
 }
 
-
-.wave.-two {
+.Waves__wave--front {
+  opacity: .97;
   animation: drift 15000ms infinite linear;
-  background:$shakespear;
-  opacity: .88;
+  background: $shakespear;
 }
 
-.box:after {
-  content: '';
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 11;
-  transform: translate3d(0, 0, 0);
+.Waves__wave--back {
+  opacity: .88;
+  animation: drift 30000ms infinite linear;
+  background: $seagull;
 }
 
 @keyframes drift {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }
