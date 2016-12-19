@@ -29,3 +29,8 @@ $(function() {
             .addTo(controller);
     });
 });
+
+//Navigation
+$('.Burger').click(function () {
+    $('.Menu').fadeToggle();
+})
