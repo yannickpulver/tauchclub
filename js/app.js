@@ -6,10 +6,7 @@ var controller = new ScrollMagic.Controller();
 
 $(function() {
 
-    new ScrollMagic.Scene({triggerElement: "body"})
-        .setTween("body > .js-page-section-main", {y: "50%"})
-        .addIndicators()
-        .addTo(controller);
+
 
     $(".js-page-section-w-header").each(function () {
         var that = $(this);
@@ -28,4 +25,14 @@ $(function() {
             .triggerHook(0.3)
             .addTo(controller);
     });
+
+    new ScrollMagic.Scene({triggerElement: ".js-sandy-ground"})
+        .setTween(".js-sandy-ground", {y: "50%"})
+        .addIndicators()
+        .on('enter', function () {
+            doClear = true;
+            doDraw = true;
+        })
+
+        .addTo(controller);
 });
