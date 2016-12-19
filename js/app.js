@@ -26,8 +26,8 @@ $(function() {
             .addTo(controller);
     });
 
-    new ScrollMagic.Scene({triggerElement: ".js-sandy-ground"})
-        .setTween(".js-sandy-ground", {y: "50%"})
+    new ScrollMagic.Scene({triggerElement: "#sand-holder"})
+        .setTween("#sand-holder", {y: "50%"})
         .addIndicators()
         .on('enter', function () {
             doClear = true;
@@ -36,3 +36,8 @@ $(function() {
 
         .addTo(controller);
 });
+
+//Navigation
+$('.Burger').click(function () {
+    $('.Menu').fadeToggle();
+})

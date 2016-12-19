@@ -13,7 +13,7 @@ function setup() {
     strokeWeight(4);
     gravity = createVector(0, 0.2);
 
-    for (var i = 0; i < 50; i++)
+    for (var i = 0; i < 100; i++)
     {
         sand.push(new Sand(random(width), height))
     }
