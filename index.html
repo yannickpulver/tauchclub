@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -73,9 +73,16 @@
             quisquam, reiciendis vel. Non, numquam.</p>
     </section>
     <section class="PageSection js-page-section-w-header" data-title="Kontakt">
-        <p class="PageSection__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad
-            aliquid at corporis dicta dignissimos dolore fugit iusto laboriosam maiores non quae quaerat, quam quia
-            quisquam, reiciendis vel. Non, numquam.</p>
+        <h3 class="PageSection__paragraph">Kontaktiere uns!</h3>
+        <form class="PageSection__paragraph" id="CustomerContact">
+        <span for="CustomerName">Dein Name:</span><br/>
+        <input id="CustomerName" class="" placeholder="Max Muster..." /><br/>
+        <span for="CustomerEmail">Deine Email-Adresse:</span><br/>
+        <input id="CustomerEmail" class="" placeholder="Max.Muster@muster.ch..."/><br/>
+        <span for="CustomerText">Deine Nachricht:</span><br/>
+        <textarea id="CustomerText" class="" placeholder="Mein Text..."></textarea><br/>
+            <button type="submit" id="ContactSubmit">Absenden</button>
+        </form>
     </section>
     <section class="PageSection PageSection--footer js-page-section-w-header" data-title="Ground">
         <p class="PageSection__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid at corporis dicta dignissimos dolore fugit iusto laboriosam maiores non quae quaerat, quam quia quisquam, reiciendis vel. Non, numquam.</p>

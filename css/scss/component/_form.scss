@@ -1,0 +1,14 @@
+input, textarea{
+  width: 100%;
+  background: none;
+  border:none;
+  border-bottom: 1px solid $boston-blue;
+  color:$white;
+
+}
+input:focus, textarea:focus{
+  background: none;
+  border:none;
+  border-bottom: 1px solid $boston-blue;
+
+}
