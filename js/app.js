@@ -5,13 +5,9 @@
 var controller = new ScrollMagic.Controller();
 
 $(function() {
-
-
-
     $(".js-page-section-w-header").each(function () {
         var that = $(this);
         new ScrollMagic.Scene({triggerElement: this})
-            .addIndicators() // add indicators (requires plugin)
             .on('enter', function () {
                 $("#js-header-title").text(that.data("title")).hide().fadeIn();
             })
@@ -28,7 +24,6 @@ $(function() {
 
     new ScrollMagic.Scene({triggerElement: "#sand-holder"})
         .setTween("#sand-holder", {y: "50%"})
-        .addIndicators()
         .on('enter', function () {
             doClear = true;
             doDraw = true;
