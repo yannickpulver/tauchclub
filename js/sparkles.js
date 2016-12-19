@@ -11,22 +11,15 @@ function setup() {
     canvas.parent('sand-holder');
     stroke(242,226,161);
     strokeWeight(4);
-    gravity = createVector(0, 0.2);
+    gravity = createVector(0, 0.15);
+    this.renewSand();
 
-    for (var i = 0; i < 100; i++)
-    {
-        sand.push(new Sand(random(width), height))
-    }
 }
 
 function draw() {
     if (this.doDraw && this.doClear) {
         this.doClear = false;
-        this.sand = [];
-        for (var i = 0; i < 50; i++)
-        {
-            sand.push(new Sand(random(width), height))
-        }
+        this.renewSand();
     }
     if (this.doDraw) {
         clear();
@@ -38,12 +31,20 @@ function draw() {
     }
 }
 
+function renewSand() {
+    this.sand = [];
+    for (var i = 0; i < 300; i++)
+    {
+        sand.push(new Sand(random(window.innerWidth), height))
+    }
+}
+
 
 function Sand(x,y) {
-    this.pos = createVector(x,y);
-    this.acc = createVector(0,0);
-    this.angle = createVector(random(-3,3), random(-3,3));
-    this.vel = createVector(0,random(-4,-11));
+    this.pos =   createVector(x,y);
+    this.acc =   createVector(0,0);
+    this.angle = createVector(random(-2,2), random(-2,2));
+    this.vel =   createVector(0,random(-6,-8));
 
     this.applyForce = function(force) {
         this.acc.add(force);
