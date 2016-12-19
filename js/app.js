@@ -16,7 +16,7 @@ $(function() {
         new ScrollMagic.Scene({triggerElement: this})
             .addIndicators() // add indicators (requires plugin)
             .on('enter', function () {
-                $("#js-header-title").text(that.data("title"));
+                $("#js-header-title").text(that.data("title")).hide().fadeIn();
             })
             .on('leave', function () {
                 var prev = that.prev();
