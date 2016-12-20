@@ -1,12 +1,13 @@
-@import 'scss/vendor/normalize';
+@import "scss/vendor/normalize";
 
-@import 'scss/global/variables';
-@import 'scss/global/global';
-@import 'scss/global/typography';
+@import "scss/global/variables";
+@import "scss/global/global";
+@import "scss/global/typography";
 
-@import 'scss/component/navigation';
-@import 'scss/component/header';
-@import 'scss/component/content';
-@import 'scss/component/form';
-@import 'scss/component/waves';
-@import 'scss/component/footer';
+@import "scss/component/navigation";
+@import "scss/component/header";
+@import "scss/component/content";
+@import "scss/component/form";
+@import "scss/component/waves";
+@import "scss/component/footer";
+@import "scss/component/bubble";

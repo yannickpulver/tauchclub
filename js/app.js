@@ -4,7 +4,7 @@
 
 var controller = new ScrollMagic.Controller();
 
-$(function() {
+$(function () {
     $(".js-page-section-w-header").each(function () {
         var that = $(this);
         new ScrollMagic.Scene({triggerElement: this})
@@ -22,14 +22,52 @@ $(function() {
             .addTo(controller);
     });
 
+    //Makes Sand sparkle around when reaching bottom :)
     new ScrollMagic.Scene({triggerElement: "#sand-holder"})
         .setTween("#sand-holder", {y: "50%"})
         .on('enter', function () {
             doClear = true;
             doDraw = true;
         })
-
         .addTo(controller);
+
+    //Pin Main Section, so that the content goes over it
+    new ScrollMagic.Scene({
+        triggerElement: ".js-page-section-main"
+    })
+        .setPin(".js-page-section-main")
+        .triggerHook('onLeave')
+        .addTo(controller);
+
+
+
+
+    $(".js-page-section-two").each(function () {
+
+        var tween = new TimelineMax()
+            .add([
+                TweenMax.fromTo($(this).find(".js-bubble-one"), 1, {top: $(window).height() * 0.8}, {top: $(window).height() * 0.2}),
+                TweenMax.fromTo($(this).find(".js-bubble-two"), 1, {top: $(window).height() * 0.6, scale: 2}, {top: 0, scale: 4}),
+                TweenMax.fromTo($(this).find(".js-bubble-three"), 1, {
+                    top: $(window).height() * 0.4,
+                    scale: 1.5
+                }, {top: $(window).height() * 0.2, scale: 3}),
+                TweenMax.fromTo($(this).find(".js-bubble-four"), 1, {
+                    top: $(window).height() * 0.2,
+                    scale: 0.5
+                }, {top: -$(window).height() * 0.1, scale: 1}),
+                TweenMax.fromTo($(this).find(".js-bubble-five"), 1, {
+                    top: $(window).height() * 0.8,
+                    scale: 1
+                }, {top: $(window).height() * 0.4, scale: 2}),
+                TweenMax.fromTo($(this).find(".js-bubble-six"), 1, {top: 0, scale: 1}, {top: -$(window).height() * 0.2, scale: 2}),
+            ]);
+
+        // build scene
+        new ScrollMagic.Scene({triggerElement: this, duration: $(window).height()})
+            .setTween(tween)
+            .addTo(controller);
+    });
 });
 
 //Navigation

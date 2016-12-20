@@ -1,0 +1,54 @@
+.Bubble {
+  width: 20px;
+  height: 20px;
+  background: $white;
+  border-radius: 20px;
+  position: absolute;
+
+  //&::after,
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  border-radius: 3px;
+  //  background: #449dcc;
+  //}
+  //
+  //&::after {
+  //  top: 7px;
+  //  left: 3px;
+  //  width: 4px;
+  //  height: 4px;
+  //}
+  //
+  //&::before {
+  //  top: 4px;
+  //  left: 6px;
+  //  width: 2px;
+  //  height: 2px;
+  //}
+}
+
+.Bubble--one {
+  left: 20px;
+  opacity: 0.4;
+}
+
+.Bubble--two {
+  right: 60px;
+  opacity: 0.2;
+}
+
+.Bubble--three {
+  left: 60px;
+  opacity: 0.2;
+}
+
+.Bubble--four {
+  right: 20px;
+  opacity: 0.4;
+}
+
+.Bubble--five {
+  right: 40px;
+  opacity: 0.4;
+}

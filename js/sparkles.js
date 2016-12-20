@@ -7,7 +7,7 @@ var doDraw = false;
 var doClear = true;
 
 function setup() {
-    var canvas = createCanvas(window.innerWidth, 400);
+    var canvas = createCanvas(window.innerWidth, window.innerHeight * 0.7);
     canvas.parent('sand-holder');
     stroke(242,226,161);
     strokeWeight(4);
@@ -44,7 +44,7 @@ function Sand(x,y) {
     this.pos =   createVector(x,y);
     this.acc =   createVector(0,0);
     this.angle = createVector(random(-2,2), random(-2,2));
-    this.vel =   createVector(0,random(-6,-8));
+    this.vel =   createVector(0,random(-3,-8));
 
     this.applyForce = function(force) {
         this.acc.add(force);
