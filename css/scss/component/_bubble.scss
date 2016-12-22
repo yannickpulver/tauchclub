@@ -28,17 +28,20 @@
   //}
 }
 
-.Bubble--one {
+.Bubble--one,
+.Bubble--six {
   left: 20px;
   opacity: 0.4;
 }
 
-.Bubble--two {
+.Bubble--two,
+.Bubble--seven {
   right: 60px;
   opacity: 0.2;
 }
 
-.Bubble--three {
+.Bubble--three,
+.Bubble--eight {
   left: 60px;
   opacity: 0.2;
 }
@@ -52,3 +55,4 @@
   right: 40px;
   opacity: 0.4;
 }
+
