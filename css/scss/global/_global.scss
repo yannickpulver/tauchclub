@@ -21,3 +21,21 @@ body {
 .Main {
   background: linear-gradient($shakespear, $blue-zodiac);
 }
+
+::-webkit-input-placeholder {
+  color: $white-80;
+}
+
+:-ms-input-placeholder {
+  color: $white-80;
+}
+
+::-moz-placeholder {
+  color: $white-80;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: $white-80;
+  opacity: 1;
+}

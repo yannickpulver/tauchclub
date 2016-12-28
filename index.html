@@ -122,14 +122,10 @@
         <div class="Bubble Bubble--seven js-bubble-seven"></div>
         <div class="Bubble Bubble--eight js-bubble-eight"></div>
         <div class="PageSection__content">
-        <h3 class="PageSection__paragraph">Kontaktiere uns!</h3>
-        <form class="PageSection__paragraph" id="CustomerContact">
-        <span for="CustomerName">Dein Name:</span><br/>
-        <input id="CustomerName" class="" placeholder="Max Muster..." /><br/>
-        <span for="CustomerEmail">Deine Email-Adresse:</span><br/>
-        <input id="CustomerEmail" class="" placeholder="Max.Muster@muster.ch..."/><br/>
-        <span for="CustomerText">Deine Nachricht:</span><br/>
-        <textarea id="CustomerText" class="" placeholder="Mein Text..."></textarea><br/>
+        <form class="ContactForm">
+        <input id="CustomerName" class="ContactForm__input ContactForm__name" placeholder="Ihr Name" /><br/>
+        <input id="CustomerEmail" class="ContactForm__input ContactForm__mail" placeholder="Ihre E-Mail"/><br/>
+        <textarea id="CustomerText" class="ContactForm__input ContactForm__message" placeholder="Ihre Nachricht"></textarea><br/>
             <button type="submit" id="ContactSubmit">Absenden</button>
         </form>
         </div>
