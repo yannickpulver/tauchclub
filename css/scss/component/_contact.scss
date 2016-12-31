@@ -1,31 +1,62 @@
 .ContactForm {
-
+  margin: 0 ($spacer * 2);
 }
 
-.ContactForm__input {
-  border-radius: 2px;
-  padding: 16px;
-  width: 100%;
-  margin: 0 0 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 300;
+.ContactInput {
+  position: relative;
+  margin: 0 0 ($spacer * 2);
+}
 
-  &, &:focus {
-    background: $white-10;
+.ContactInput__field {
+  padding: ($spacer * 2) ($spacer * 2) ($spacer * 2) ($spacer * 6);
+
+  &,
+  &:focus {
+    background: linear-gradient(to bottom, $white-10, $white-5);
     border: 1px solid $white-40;
     outline: 0;
   }
 }
 
-.ContactForm__name {
+.ContactInput__submit,
+.ContactInput__field {
+  width: 100%;
+  border-radius: 2px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  box-shadow: 1px 1px 1px 1px $black-10;
+  font-size: 0.9em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ContactInput__submit {
+  padding: ($spacer * 2);
+
+  &,
+  &:focus {
+    outline: 0;
+    border: 1px solid $white-40;
+    background: $white-80;
+  }
+}
+
+.ContactInput__icon {
+  position: absolute;
+  top: $spacer * 2;
+  left: $spacer * 2;
+  font-size: 1em;
+  color: $white-80;
+}
+
+.ContactInput__name {
 
 }
 
-.ContactForm__mail {
+.ContactInput__mail {
 
 }
 
-.ContactForm__message {
+.ContactInput__message {
   min-height: 200px;
 }

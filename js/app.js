@@ -24,11 +24,13 @@ $(function () {
 
     //Makes Sand sparkle around when reaching bottom :)
     new ScrollMagic.Scene({triggerElement: "#sand-holder"})
-        .setTween("#sand-holder", {y: "50%"})
+        .setTween("#sand-holder", {y: "0%"})
         .on('enter', function () {
             doClear = true;
             doDraw = true;
         })
+        .addIndicators()
+        .triggerHook(0.4)
         .addTo(controller);
 
     //Pin Main Section, so that the content goes over it

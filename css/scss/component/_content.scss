@@ -10,10 +10,16 @@
 
 .PageSection--two {
   position: relative;
+
+}
+
+.PageSection--contact {
+  min-height: 60vh;
 }
 
 .PageSection--footer {
   position: relative;
+  margin-top: -72%;
 }
 
 .PageSection__paragraph {
