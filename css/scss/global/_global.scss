@@ -18,6 +18,14 @@ body {
   font-size: $font-size;
 }
 
+a {
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
 .Main {
   background: linear-gradient($shakespear, $blue-zodiac);
 }

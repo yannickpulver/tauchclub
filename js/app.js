@@ -29,7 +29,6 @@ $(function () {
             doClear = true;
             doDraw = true;
         })
-        .addIndicators()
         .triggerHook(0.4)
         .addTo(controller);
 
@@ -90,5 +89,5 @@ $(function () {
 
 //Navigation
 $('.Burger').click(function () {
-    $('.Menu').fadeToggle();
+    $('.Menu').fadeToggle().css("display","flex");
 })

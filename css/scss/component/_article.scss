@@ -1,0 +1,41 @@
+.Article:not(:last-child) {
+  margin-bottom: 24px;
+  border-bottom: 1px solid $white-20;
+}
+
+.Article {
+  background: $white;
+  box-shadow: $border-subtle-shadow;
+  padding: ($spacer * 2);
+  transition: 0.1s all ease-in-out;
+
+  &:hover {
+    box-shadow: $border-subtle-shadow--hovered;
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.Article__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: $black-80;
+  padding-bottom: 8px;
+}
+
+.Article__date {
+  font-size: 12px;
+  color: $silver-chalice;
+}
+
+.Article__desc {
+  font-size: 16px;
+  font-weight: 300;
+  color: $black-40;
+  line-height: 24px;
+}
+
+.Article__desc,
+.Article__title {
+  color: $blue-zodiac;
+}
