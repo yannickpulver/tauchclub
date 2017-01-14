@@ -3,23 +3,25 @@ $burger-size: 36px;
 $font-size: 14px;
 
 $white:       #fff;
-$white-80:    rgba(255, 255, 255, 0.8);
-$white-60:    rgba(255, 255, 255, 0.6);
-$white-40:    rgba(255, 255, 255, 0.4);
-$white-20:    rgba(255, 255, 255, 0.2);
-$white-10:    rgba(255, 255, 255, 0.1);
-$white-5:    rgba(255, 255, 255, 0.05);
+$white-80:    rgba($white, .8);
+$white-60:    rgba($white, .6);
+$white-40:    rgba($white, .4);
+$white-20:    rgba($white, .2);
+$white-10:    rgba($white, .1);
+$white-5:    rgba($white, .05);
+
 $blue-zodiac: #0d1d3b;
+$blue-zodiac-50: rgba($blue-zodiac, .2);
 
 $silver-chalice: #a8a8a8;
-$gallery: #EFEFEF;
+$gallery: #efefef;
 $mercury: #e2e2e2;
 
-$black-80: rgba(0, 0, 0, 0.8);
-$black-60: rgba(0, 0, 0, 0.6);
-$black-40: rgba(0, 0, 0, 0.4);
-$black-10: rgba(0, 0, 0, 0.1);
-$black-80: rgba(0, 0, 0, 0.8);
+$black: #000;
+$black-80: rgba($black, .8);
+$black-60: rgba($black, .6);
+$black-40: rgba($black, .4);
+$black-10: rgba($black, .1);
 
 $border-subtle-shadow: 1px 1px 3px $black-10;
 $border-subtle-shadow--hovered: 2px 2px 5px $black-10;
@@ -33,7 +35,7 @@ $seagull:  #70c1eb;
 $viking: #70b9e0;
 
 //$spacing
-
 $spacer: 8px;
 
+//font
 $mdi-font-path: "../fonts";

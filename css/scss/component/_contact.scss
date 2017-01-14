@@ -9,13 +9,17 @@
 
 .ContactInput__field {
   padding: ($spacer * 2) ($spacer * 2) ($spacer * 2) ($spacer * 6);
+  background: linear-gradient(to bottom, $white-10, $white-5);
+  transition: 0.1s all ease-in-out;
 
   &,
   &:focus {
-    background: linear-gradient(to bottom, $white-10, $white-5);
     border: 1px solid $white-40;
     outline: 0;
   }
+
+  &:focus {
+    background: linear-gradient(to bottom, $white-5, $white-5);  }
 }
 
 .ContactInput__submit,
@@ -53,14 +57,6 @@
   left: $spacer * 2;
   font-size: 1em;
   color: $white-80;
-}
-
-.ContactInput__name {
-
-}
-
-.ContactInput__mail {
-
 }
 
 .ContactInput__message {

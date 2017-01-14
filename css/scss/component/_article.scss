@@ -1,6 +1,6 @@
 .Article:not(:last-child) {
   margin-bottom: 24px;
-  border-bottom: 1px solid $white-20;
+  //border-bottom: 1px solid $white-20;
 }
 
 .Article {
@@ -8,11 +8,17 @@
   box-shadow: $border-subtle-shadow;
   padding: ($spacer * 2);
   transition: 0.1s all ease-in-out;
+  position: relative;
 
   &:hover {
     box-shadow: $border-subtle-shadow--hovered;
     transform: translate3d(0, -2px, 0);
   }
+}
+
+.Aricle--borderless {
+  padding: 0;
+  background: transparent;
 }
 
 .Article__title {
@@ -38,4 +44,50 @@
 .Article__desc,
 .Article__title {
   color: $blue-zodiac;
+}
+
+.Article__image {
+  width: 100%;
+  display: block;
+}
+
+.GalleryItem {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, transparent 0%, rgba($shakespear, .8) 100%);
+}
+
+.GalleryItem__inner {
+  position: absolute;
+  top: $spacer * 2;
+  bottom: $spacer * 2;
+  left: $spacer * 2;
+  right: $spacer * 2;
+  border: 1px solid $white-60;
+}
+
+.GalleryItem__date,
+.GalleryItem__title {
+  text-align: right;
+  color: $white;
+}
+
+.GalleryItem__title {
+  padding: $spacer $spacer 0 0;
+  font-size: 2.2em;
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: "essonnes-headline", serif;
+  font-weight: 400;
+
+}
+
+.GalleryItem__date {
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 0 $spacer 0 0;
+  font-weight: 300;
 }
