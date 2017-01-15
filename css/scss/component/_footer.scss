@@ -5,19 +5,23 @@
   width: 100%;
 }
 
+.FooterSand__back,
+.FooterSand__front {
+  width: 101%;
+  height: 100%;
+  margin-left: -0.5%;
+
+}
+
 .FooterSand__front {
   position: absolute;
   display: flex;
   background: url("../img/sand-layer0.svg") no-repeat;
-  width: 100%;
-  height: 100%;
   background-size: 100%;
 }
 
 .FooterSand__back {
   background: url("../img/sand-layer1.svg") no-repeat;
-  width: 100%;
-  height: 100%;
   background-size: 100%;
 }
 

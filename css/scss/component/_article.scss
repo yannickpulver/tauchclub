@@ -9,6 +9,7 @@
   padding: ($spacer * 2);
   transition: 0.1s all ease-in-out;
   position: relative;
+  margin-bottom: ($spacer * 2);
 
   &:hover {
     box-shadow: $border-subtle-shadow--hovered;

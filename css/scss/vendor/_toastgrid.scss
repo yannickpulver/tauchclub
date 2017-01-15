@@ -48,13 +48,13 @@ $toast-grid-column-namespace: "grid__col" !default;
 // $col-groups are the column groups you want
 // For example, $col-groups: (3, 4, 5) will output:
 // .grid__col--n-of-3, .grid__col--n-of-4, [...]
-$toast-col-groups: (2, 8) !default;
+$toast-col-groups: (2, 8, 3) !default;
 
 // Gutter width
 $toast-gutter-width: 20px !default;
 
 // Breakpoints
-$toast-breakpoint-medium: 700px !default;
+$toast-breakpoint-medium: 769px !default;
 $toast-breakpoint-small: 480px !default;
 
 // Pushes and pulls
