@@ -80,6 +80,7 @@
 .More {
   width: 100%;
   text-align: center;
+  padding: $spacer * 2 0 0;
 }
 
 .More__text {
@@ -90,4 +91,12 @@
   padding: $spacer $spacer * 2;
   background: $blue-zodiac-50;
   border-radius: 3px;
+}
+
+.Trigger--isTablet {
+  display: none;
+}
+
+.Trigger--isNotMobile {
+  display: none
 }

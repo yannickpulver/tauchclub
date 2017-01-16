@@ -1,0 +1,86 @@
+@include mid {
+  .Trigger--isTablet {
+    display: block;
+  }
+
+  .Trigger--isNotMobile {
+    display: block;
+  }
+}
+
+
+@include tablet {
+  .Waves__wave {
+    width: 200%;
+    height: 200%;
+    bottom: -170%;
+    transform-origin: 50% 48%;
+  }
+
+  .Heading__logo {
+    width: 100px;
+  }
+
+  .Heading__text {
+    font-size: 4.5em;
+
+  }
+
+  .DiveDown__diver {
+    width: 56px;
+  }
+
+  .DiveDown__spacer {
+    height: 32px;
+    width: 5.5px;
+  }
+
+  .DiveDown__text {
+    font-size: 1.5em;
+  }
+
+  .Nav {
+    height: 56px;
+  }
+
+  .PageSection:not(.PageSection--main) {
+    padding-top: $header-height + 250px;
+  }
+
+  .More__text {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+
+  .Trigger--isNotMobile {
+    display: block;
+  }
+}
+
+@include desktop {
+  .Waves__wave {
+    height: 300%;
+    bottom: -280%;
+  }
+
+  .PageSection:not(.PageSection--footer, .PageSection--main) {
+    padding-bottom: $header-height + 50px;
+  }
+
+  .PageSection:not(.PageSection--main) {
+    padding-top: $header-height + 50px;
+  }
+
+  .PageSection--footer {
+    margin-top: -35%;
+  }
+
+  .FooterSand {
+    height: 48%;
+  }
+
+  .Trigger--isTablet {
+    display: none;
+  }
+
+}

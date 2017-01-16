@@ -3,6 +3,7 @@
 @import "scss/global/variables";
 @import "scss/global/global";
 @import "scss/global/typography";
+@import "scss/global/mixin";
 
 @import "scss/component/navigation";
 @import "scss/component/header";
@@ -13,6 +14,9 @@
 @import "scss/component/contact";
 @import "scss/component/bubble";
 @import "scss/component/article";
+
+@import "scss/global/media";
 @import "scss/component/sideTemplate";
 
 @import "scss/vendor/mdi/materialdesignicons";
+@import "scss/vendor/toastgrid";
