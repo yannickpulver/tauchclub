@@ -15,11 +15,13 @@
 
 .PageSection--contact {
   min-height: 60vh;
+  position: relative;
+  z-index: 3;
 }
 
 .PageSection--footer {
   position: relative;
-  margin-top: -72%;
+  margin-top: -278px;
 }
 
 .PageSection__paragraph {

@@ -1,7 +1,6 @@
 .PageSection__contentOnePage {
   background-color: $white;
-  margin-top: 20px;
-  min-height: 90vh;
+  min-height: 80vh;
   color: black;
   padding: 20px;
   position:relative;
@@ -15,8 +14,8 @@
   background: url("../img/sand-layer0.svg") no-repeat;
   width: 100%;
   height: 100%;
-  background-size: 101%;
-  z-index: 2;
+  background-size: 110%;
+  z-index: 1;
 }
 
 .FooterSand__backSideTemplate {
@@ -24,8 +23,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-size: 100%;
-  z-index: 1;
+  background-size: 110%;
+  z-index: 0;
 }
 
 .PageSection--footerSideTemplate{
@@ -38,4 +37,42 @@
 
 .Header--content {
   background: $blue-zodiac;
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  min-height: 50vh;
+  padding-bottom:290px;
+}
+
+.container__item{
+  width: 450px;
+  min-height: 180px;
+  margin-bottom:24px !important;
+}
+
+.container__item--zuruck{
+  align-self: center;
+}
+
+.PageSection--footer--paragraph{
+  position: relative;
+  color: #e3bc86;
+  float: right;
+  text-align: center;
+  top: 31%;
+  right: 50px;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.PageSection--footer--paragraph--margin{
+  margin-left:20px;
+}
+
+.container__item--zuruck--margin{
+  margin-top:20px;
 }

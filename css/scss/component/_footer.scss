@@ -11,14 +11,14 @@
   background: url("../img/sand-layer0.svg") no-repeat;
   width: 100%;
   height: 100%;
-  background-size: 100%;
+  background-size: 109%;
 }
 
 .FooterSand__back {
   background: url("../img/sand-layer1.svg") no-repeat;
   width: 100%;
   height: 100%;
-  background-size: 100%;
+  background-size: 109%;
 }
 
 .SparklySand {
@@ -30,4 +30,15 @@
     position: absolute;
     top: 0;
   }
+}
+
+.PageSection--footer--paragraph-indexseite{
+  position: absolute;
+  color: #e3bc86;
+  float: right;
+  text-align: center;
+  top: 31%;
+  right: 50px;
+  font-size: 21px;
+  text-transform: uppercase;
 }
